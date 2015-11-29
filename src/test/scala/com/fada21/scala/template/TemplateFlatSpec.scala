@@ -6,7 +6,7 @@ class TemplateFlatSpec extends BaseFlatSpec {
     true should be(true)
   }
 
-  it should "should detect IllegalStateException exception thrown" in {
+  it should "detect IllegalStateException exception thrown" in {
     val e = new IllegalStateException
     a[IllegalStateException] should be thrownBy {
       throw e

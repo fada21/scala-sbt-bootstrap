@@ -12,7 +12,7 @@ class TemplateFeatureSpec extends BaseFeatureSpec {
 
     scenario("Some passing tests implemented") {
 
-      Given(" I have passing test")
+      Given(" I have good feature implementation")
       val e = new IllegalStateException()
 
       When("I run the test")
@@ -24,14 +24,14 @@ class TemplateFeatureSpec extends BaseFeatureSpec {
 
     scenario("Some failing tests implemented") {
 
-      Given("I have failing test")
+      Given("I have wrong feature implementation")
       val expectedTrue = false
 
-      Then("I get a fail")
+      Then("I get it failed")
       assert(expectedTrue)
     }
 
-    scenario("Some pending scenario prepared") {
+    scenario("Some scenario prepared for implementation") {
 
       Given("I have something to test")
       When("I write some test")
@@ -41,7 +41,7 @@ class TemplateFeatureSpec extends BaseFeatureSpec {
       pending
     }
 
-    scenario("Some planed scenario outlined")(pending)
+    scenario("Some planned scenario outlined")(pending)
   }
 
 }
